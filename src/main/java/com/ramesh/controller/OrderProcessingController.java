@@ -52,10 +52,7 @@ public class OrderProcessingController {
 
     @GetMapping("/isolation")
     public String testIsolation() throws InterruptedException {
-        //readUncommittedDemo.testReadUncommitted(1);
-        //readCommittedDemo.testReadCommitted(1);
-        //repeatableReadDemo.demonstrateRepeatableRead(1);
-        serializableIsolationDemo.testSerializableIsolation(1);
+               serializableIsolationDemo.testSerializableIsolation(1);
         return "success";
     }
 
