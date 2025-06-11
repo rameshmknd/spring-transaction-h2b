@@ -14,15 +14,15 @@ public class AuditLog {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Long orderId;  // The order associated with the log
+    private Long orderId;  
 
-    private String action;  // Action taken (e.g., "Order Placed", "Payment Failed")
+    private String action;  
 
-    private LocalDateTime timestamp;  // Timestamp of the action
+    private LocalDateTime timestamp;  
 
     // Default constructor
     public AuditLog() {
-        this.timestamp = LocalDateTime.now();  // Default timestamp is the current time
+        this.timestamp = LocalDateTime.now();  
     }
 
     // Getters and setters
